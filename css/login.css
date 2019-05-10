@@ -1,0 +1,75 @@
+body{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff;
+    background-color: #1B4A47; 
+    background-size: cover;
+}
+
+.signin{
+    background: #BE624C;
+    padding: 48px;
+    width: 250px;
+    margin-top: 80px;
+    height: 400px;
+    margin-left: 180px;
+}
+
+form{
+    width: 240px;
+    text-align: center;
+}
+
+input{
+    width: 250px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: white;
+}
+
+::placeholder{
+    color: lightgrey;
+    opacity: 0.8;
+}
+
+input[type=button]{
+    border: none;
+    width: 250px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    color: white;
+    background-color: black;
+}
+
+a{
+    margin-right:0px;
+    font-size:13px;
+    font-family:Tahoma, Geneva, san-serif;
+    color: yellow;
+    text-decoration: blink;
+}
+
+a:hover{
+    color: darkblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
