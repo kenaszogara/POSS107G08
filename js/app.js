@@ -4,6 +4,6 @@ app.config([ '$routeProvider', '$locationProvider', function ($routeProvider, $l
   $locationProvider.html5Mode(true);
   $routeProvider
   .when("/", {
-    templateUrl: "pages/login.html"
+    templateUrl: "POSS107G08/pages/login.html"
   })
 }]) 
