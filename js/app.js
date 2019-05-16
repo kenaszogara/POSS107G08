@@ -6,4 +6,7 @@ app.config([ '$routeProvider', '$locationProvider', function ($routeProvider, $l
   .when("/", {
     templateUrl: "/pages/login.html"
   })
+  .when("/login", {
+    templateUrl: "/pages/login.html"
+  })
 }]) 
