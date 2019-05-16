@@ -5,4 +5,7 @@ app.config([ '$routeProvider', function ($routeProvider) {
   .when("/", {
     templateUrl: "pages/login.html"
   })
+  .when("/login", {
+    templateUrl: "pages/login.html"
+  })
 }]) 
