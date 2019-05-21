@@ -3,26 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>To Do List</title>
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<link href="css/To-do list.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 </head>
 <body>
 	<div class="container">
 		<div class="header">
-			<div class="clear">
-				<i class="fa fa-refresh" aria-hidden="true"></i>
-			</div>
 			<div id="date"></div>
 		</div>
-	        <div class="content">
-            <ul id="list"></ul>
-        </div>
-		<div class="add-item">
-			<i class="fa fa-plus-circle" aria-hidden="true"></i>
-			<input type="text" id="item" placeholder="Add a to-do">
+        <div class="content">
+        	<ul id="list">
+        	</ul>
+    	</div>
+		<div class="add-to-do">
+			<i class="fas fa-plus-circle"></i>
+			<input type="text" id="input" placeholder="Add a to-do">
 		</div>
 	</div>
-	<script scr="js/To-do list.js"></script>
+	<script src="tdl.js"></script>
 </body>
 </html>
