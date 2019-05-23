@@ -9,4 +9,10 @@ app.config([ '$routeProvider', '$locationProvider', function ($routeProvider, $l
   .when("/login", {
     templateUrl: "/pages/login.html"
   })
+  .when("/signup", {
+    templateUrl: "/pages/signup.html"
+  })
+  .when("/tdl", {
+    templateUrl: "/pages/tdl.html"
+  })
 }]) 
