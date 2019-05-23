@@ -1,0 +1,39 @@
+div{
+    font-family:'Sahitya', cursive, sans-serif, bold;
+    font-size:110%;
+    margin-left:270px;
+}
+#date{
+    font-family:'Sahitya', cursive, sans-serif, bold;
+    font-size:110%;
+    margin-left:20px;
+}
+#input{
+    font-family:'Sahitya', cursive, sans-serif, bold;
+    font-size:75%;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-plus-circle:before {
+  content: "\f055";
+}
+.fa-check-circle:before {
+    content: "\f058"
+}
+.fa-trash-o:after {
+  content: "\f014";
+}
+.fa-circle:before {
+    content: "\f111";
+}
