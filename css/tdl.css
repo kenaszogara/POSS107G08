@@ -1,3 +1,10 @@
+body{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff;
+    background-color: #1B4A47; 
+    background-size: cover;
+}
+
 div{
     font-family:'Sahitya', cursive, sans-serif, bold;
     font-size:110%;
