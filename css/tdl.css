@@ -1,14 +1,24 @@
 body{
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'Sahitya', cursive, sans-serif, bold;
     color: #fff;
-    background-color: #1B4A47; 
+    background-color: #4a1b1b; 
     background-size: cover;
 }
 
 div{
     font-family:'Sahitya', cursive, sans-serif, bold;
     font-size:110%;
-    margin-left:270px;
+    text-align:center;
+}
+#hasta{
+    font-family:'Sahitya', cursive, sans-serif, bold;
+    font-size:75%;
+    text-align:center;
+	font-stretch: extra-expanded;
+}
+.textbox{
+	width:125px;
+	text-align:center;
 }
 #date{
     font-family:'Sahitya', cursive, sans-serif, bold;
@@ -18,6 +28,23 @@ div{
 #input{
     font-family:'Sahitya', cursive, sans-serif, bold;
     font-size:75%;
+    text-align:center;
+}
+input[type=button]{
+	font-family:'Sahitya', cursive, sans-serif, bold;
+    border: none;
+    width:80px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=button]:hover{
+    color: white;
+    background-color: black;
 }
 @font-face {
   font-family: 'FontAwesome';
@@ -34,6 +61,8 @@ div{
 }
 .fa-plus-circle:before {
   content: "\f055";
+    color: white;
+    font-size:17px;
 }
 .fa-check-circle:before {
     content: "\f058"
