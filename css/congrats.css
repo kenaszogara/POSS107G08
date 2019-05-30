@@ -1,0 +1,29 @@
+body{
+    background: #1B4A47; 
+    background-size: cover;
+}
+
+.congrats{
+    background: #BE624C;
+    padding: 50px;
+    height: 200px;
+    margin-left: 180px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 250px;
+}
+
+h2{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+}
+
+a{
+    color: yellow;
+    text-decoration: none;
+    font-family:  Tahoma, Geneva, sans-serif;
+    margin-left: 40px;
+}
+
+
