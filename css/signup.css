@@ -1,17 +1,22 @@
 body{
-    font-family: Tahoma, Geneva, sans-serif;
-    color: #fff;
-    background-color: #1B4A47; 
+    font-family: Tahoma, geneva, sans-serif;
+    color: white;
+    background: #1B4A47;
     background-size: cover;
+
 }
 
-.signin{
+.signup{
     background: #BE624C;
     padding: 40px;
     width: 250px;
     margin: auto;
     margin-top: 70px;
-    height: 400px;
+    height: 430px;
+}
+
+h2{
+    color: white;
 }
 
 form{
@@ -34,11 +39,6 @@ input{
     color: white;
 }
 
-::placeholder{
-    color: lightgrey;
-    opacity: 0.8;
-}
-
 input[type=button]{
     border: none;
     width: 250px;
@@ -56,20 +56,7 @@ input[type=button]:hover{
     background-color: black;
 }
 
-a{
-    margin-right:0px;
-    font-size:13px;
-    font-family:Tahoma, Geneva, san-serif;
-    color: yellow;
-    text-decoration: blink;
-}
-
-a:hover{
-    color: darkblue;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+::placeholder{
+    color: lightgrey;
+    opacity: 0.8;
 }
