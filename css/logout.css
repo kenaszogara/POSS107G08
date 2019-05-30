@@ -1,0 +1,26 @@
+body{
+    background:#4a1b1b;
+	text-align: center;
+}
+h1{
+	color:white;
+	text-shadow: black;
+	font-size:70px;
+}
+input[type=button]{
+	font-family:'Sahitya', cursive, sans-serif, bold;
+    border: none;
+    width:150px;
+    background: white;
+    color: black;
+    font-size: 16.5px;
+    line-height: 15px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+input[type=button]:hover{
+    color: white;
+    background-color: black;
+}
