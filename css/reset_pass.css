@@ -1,0 +1,63 @@
+body{
+    font-family: Tahoma, geneva, sans-serif;
+    color: white;
+    background: #1B4A47;
+    background-size: cover;
+}
+
+a{
+    color: yellow;
+    text-decoration: blink;
+    font-family: Tahoma, geneva, sans-serif;
+}
+
+form{
+    width: 240px;
+    text-align: center;
+}
+
+.reset{
+    background: #BE624C;
+    padding: 40px;
+    width: 250px;
+    margin: auto;
+    margin-top: 100px;
+    height: 350px;
+}
+
+input{
+    width: 250px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: white;
+}
+
+input[type=button]{
+    border: none;
+    width: 250px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    color: white;
+    background-color: black;
+}
+
+::placeholder{
+    color: lightgrey;
+    opacity: 0.8;
+}
