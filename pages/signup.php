@@ -18,7 +18,7 @@
 
             $sql = "INSERT INTO accounts (username, password, email) VALUES ('$username','$password', '$email')";
             if ($mysqli->query($sql)) {
-                $_SESSION['message'] = "Congratulations you have sign up successfully! Added $username to the database!";
+                $_SESSION['message'] = "Congratulations you have sign up successfully! Welcome $username!";
                 header("location: /pages/congrats.php");
             } else {
                 $_SESSION['message'] = "User could not be added to the database!";
