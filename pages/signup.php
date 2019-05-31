@@ -45,7 +45,7 @@
             // else query data...
             } else {    
                 
-                $sql = "INSERT INTO accounts (username, password, email) VALUES ('$username','$password', '$email')";
+                $sql = "INSERT INTO accounts (username, pass, email) VALUES ('$username','$password', '$email')";
                 
                 if ($mysqli->query($sql)) {
                     // dsiplay congrats message
@@ -95,7 +95,7 @@
         <br><br>
         <input type="email" name="email" placeholder="Email address" required>
         <br><br>
-        <input type="submit" value="Sign Up" class="button">
+        <input type="submit" value="Sign Up">
         <br><br>
     </form>
 </div>

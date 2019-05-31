@@ -6,14 +6,12 @@
 </head>
 <body>
     <div class="signin">
-        <form>
+        <form action="/pages/login.php" method="POST">
             <h2 style="color: white">Login</h2>
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="password" placeholder="Password"> <br><br>
     
-            <a href="/pages/tdl.html">
-                <input type="button" value="Log In">
-            </a> <br><br>
+            <input type="submit" value="Log In">
     
             <div id="container">
                 <a href="/pages/reset_pass.html">Reset password</a>
