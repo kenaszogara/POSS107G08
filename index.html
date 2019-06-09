@@ -1,24 +1,194 @@
 <!DOCTYPE html>
 <head>
-    <title>Thank You Next</title>
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <link rel="stylesheet" href="/css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <html lang="en">
+    <title>Thank You Next!</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <!-- icons from font-awesome -->
+    <script src="https://kit.fontawesome.com/f59f989fcf.js"></script>
 </head>
+
+
+<style>
+    body {
+        line-height: 1.5;
+        font-family: "Montserrat";
+        font-size: 16px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+    p{
+        color: #757575;
+    }
+    .w3-bar,
+    .custom-navbar {
+        background-color: #1B4A47;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        text-align: left;
+        box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        width: 100%;
+        overflow: hidden;
+        font-size: 18px;
+    }
+    .custom-padding{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .custom-header{
+        padding: 0.01em 16px;
+        color: #fff;
+        background-color: #1B4A47;
+        text-align: center;
+    }
+
+    .custom-hover{
+        cursor: pointer;
+    }
+
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+    .custom-red{
+        color: #BE624C;
+    }
+</style>
+
 <body>
-    <div class="signin">
-        <form action="/pages/login.php" method="POST">
-            <h2 style="color: white">Login</h2>
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password"> <br><br>
-    
-            <input type="submit" value="Log In">
-    
-            <div id="container">
-                <a href="/pages/reset_pass.html">Reset password</a>
-                <a href="/pages/forget_pass.html">Forgot password</a>
-            </div><br><br><br><br><br><br>
-            Dont't have account?<a href="/pages/signup.php">&nbsp;Sign Up</a>
-        </form>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="custom-navbar">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="/index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+            <a href="/pages/login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Demo</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="/pages/login.html" class="w3-bar-item w3-button w3-padding-large">Demo</a>
+        </div>
+    </div>
+
+    <!-- content view -->
+    <div id="content-view">
+        <!-- Header -->
+        <header class="custom-header" style="padding:128px 16px">
+            <h1 class="w3-margin w3-jumbo">THANK YOU NEXT</h1>
+            <h6 class="w3-xlarge">Simple Webapp for Task Management Tool</h6>
+            <button onclick="window.location.href='/pages/login.html'" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">TRY DEMO</button>
+        </header>
+        
+        <!-- First Grid -> Project Propossal-->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h1>Overview</h1>
+                    <h5 class="custom-padding">Thank you next is a todolist webapp .
+                    We introduce this web application because we see that 
+                    there are many students who uses todo list, so we decided to make one!</h5>
+        
+                    <p>The idea is that we provide a customizeable todo list for users,
+                    and so this webapp may help students to keep track on their stuff.</p>
+                </div>
+        
+                <div class="w3-third w3-center">
+                    <i class="fas fa-calendar-check fa-10x custom-red w3-padding-64 w3-margin-right"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Grid -> Developer Introduction -->
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-third w3-center">
+                    <i class="fa fa-users fa-10x custom-red w3-padding-64 w3-margin-right"></i>
+                </div>
+        
+                <div class="w3-twothird">
+                    <h1>About Us!</h1>
+                    <h5 class="custom-padding">We are university students from Tamkang University Lanyang Campus.
+                    Whose are currently in their sophomore and junior year,
+                    and are enrolling on the class "Practice of Open Source Software".</h5>
+        
+                    <p>Currently we are on a project to make a running web application,
+                    and our team decided to create this todo list application.
+                    Our team members consists of:</p>
+                    <ul>
+                        <li> Wendy Narmada - <a href="https://github.com/wendynarmada" >github</a></li>
+                        <li> Zogara Kenas - <a href="https://github.com/tralaladudut">github</a></li>
+                        <li> Hannah Fakatou - <a href="https://github.com/langi17">github</a></li>
+                    </ul>  
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Grid -> Code -->
+        <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h1>Code</h1>
+                    <h5 class="custom-padding">We coded in PHP, HTML, CSS, and abit of JS for this todo list app.
+                    Ofcourse we also established an SQL db using mariadb,
+                    and for the webserver, we used Apache 2,</h5>
+        
+                    <p>Since our host machine is Linux, we installed apache2 and mariadb with 
+                        "apt-get install" built in from the linux command line.</p>
+                </div>
+        
+                <div class="w3-third w3-center">
+                    <i class="fas fa-code fa-10x custom-red w3-padding-64 w3-margin-right"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+            <h1 class="w3-margin w3-xlarge">Thank You! Next!</h1>
+            <a href="https://github.com/TKUIITFCChang/POSS107G08">
+                <i class="fab fa-github fa-3x custom-hover" ></i>
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <!-- currently none -->
+
+        <script>
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
     </div>
     
+
 </body>
+
+</html>
