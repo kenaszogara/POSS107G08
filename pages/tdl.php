@@ -12,15 +12,19 @@ $today = date("Y-m-d");
 <head>
     <title>To Do List</title>
     <!-- fonts cdns put below this tag -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Sahitya' rel='stylesheet'>
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+=======
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+>>>>>>> 191b3fb565adc9604f02c3c986e645224bdccb79
 
     <!-- pleas put all the .css file link below this tag-->
     <link rel="stylesheet" href="/css/tdl.css">
 
 </head>
+<<<<<<< HEAD
 
 <style>
     body {
@@ -72,20 +76,31 @@ $today = date("Y-m-d");
         <img src="https://drive.google.com/thumbnail?id=14A-oheFQ2r8PRUnuVRQH5-K2r2ypNPt4" alt="logo" class="logo" width="65px">
     </div>
 
+=======
+<header>
+<img src="https://drive.google.com/thumbnail?id=14A-oheFQ2r8PRUnuVRQH5-K2r2ypNPt4" alt="logo" class="logo" width="65px">
+<nav>
+    <ol>
+	<li><a href="about.html">About</a></li>
+	<li><a href="about.html">How It Works</a></li>
+	<li><a href="tdl.html">Home</a></li>
+	<li><a href="https://github.com/TKUIITFCChang/POSS107G08">Contact Us</a></li>
+	<li><a href="logout.html">Log out</a></li>
+    </ol>
+</nav>
+</header>
+<body>
+>>>>>>> 191b3fb565adc9604f02c3c986e645224bdccb79
 	<div id="date"><br>
-		<input type='date' id='hasta' value='<?php echo $today; ?>' class='textbox'>
+		<input type='date' value='<?php echo $today; ?>' class='textbox'>
 	</div>
-	<div class="container">
-		<div class="header">
-			<div class="add-to-do">
-				<p class="fas fa-plus-circle"></p>
-				<input type="text" id="input" placeholder="Add a to-do" autocomplete="off" autofocus>
-			</div>
-		</div>
+	<div id="container">
+		<input type="text" placeholder="Add a to-do" autocomplete="off" autofocus>
+		<ul>
+			<li>Sign up<span><i class="fa fa-trash"></i></span></li>
+			<li>Log in<span><i class="fa fa-trash"></i></span></li>
+			<li>Add to-dos<span><i class="fa fa-trash"></i></span></li>
+		</ul>
 	</div>
-</body><br>
-<div>
-	<a href="logout.html">
-		<input type="button" value="Log Out">
-	</a>
-</div>
+	<script type="text/javascript" src="js/tdl.js"></script>
+</body>
