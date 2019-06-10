@@ -14,17 +14,12 @@ $today = date("Y-m-d");
     <!-- fonts cdns put below this tag -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Sahitya' rel='stylesheet'>
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-=======
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
->>>>>>> 191b3fb565adc9604f02c3c986e645224bdccb79
 
     <!-- pleas put all the .css file link below this tag-->
     <link rel="stylesheet" href="/css/tdl.css">
 
 </head>
-<<<<<<< HEAD
 
 <style>
     body {
@@ -76,21 +71,6 @@ $today = date("Y-m-d");
         <img src="https://drive.google.com/thumbnail?id=14A-oheFQ2r8PRUnuVRQH5-K2r2ypNPt4" alt="logo" class="logo" width="65px">
     </div>
 
-=======
-<header>
-<img src="https://drive.google.com/thumbnail?id=14A-oheFQ2r8PRUnuVRQH5-K2r2ypNPt4" alt="logo" class="logo" width="65px">
-<nav>
-    <ol>
-	<li><a href="about.html">About</a></li>
-	<li><a href="about.html">How It Works</a></li>
-	<li><a href="tdl.html">Home</a></li>
-	<li><a href="https://github.com/TKUIITFCChang/POSS107G08">Contact Us</a></li>
-	<li><a href="logout.html">Log out</a></li>
-    </ol>
-</nav>
-</header>
-<body>
->>>>>>> 191b3fb565adc9604f02c3c986e645224bdccb79
 	<div id="date"><br>
 		<input type='date' value='<?php echo $today; ?>' class='textbox'>
 	</div>
