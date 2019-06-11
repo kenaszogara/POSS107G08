@@ -4,7 +4,6 @@ if ( !isset($_SESSION['username']) ) {
 	header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
 }
 
-$today = date("Y-m-d");
 
 ?>
 
@@ -106,9 +105,6 @@ $today = date("Y-m-d");
                 </div>
                 <div class="container">
                     <div class="custom-padding">
-                        <input type='date' value='<?php echo $today; ?>' class='textbox'>
-                    </div>
-                    <div class="custom-padding">
                         <input type="text" placeholder="Add a to-do" autocomplete="off" required>
                     </div>
                 </div>  
@@ -116,7 +112,7 @@ $today = date("Y-m-d");
         </div>
 
         <div class="two columns">
-            <div id="container">  
+            <div id="todo-lists">  
                 <ul>
                     <li>Sign up<span><i class="fa fa-trash"></i></span></li>
                     <li>Log in<span><i class="fa fa-trash"></i></span></li>
@@ -125,8 +121,6 @@ $today = date("Y-m-d");
             </div>
         </div>
     </div>
-    
-    
 	
     <script type="text/javascript" src="../js/tdl.js"></script>
     

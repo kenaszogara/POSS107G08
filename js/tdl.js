@@ -6,9 +6,8 @@ $('input').keypress(function (event) {
     "use strict";
 	if (event.which === 13) {
 		var todoText = $(this).val();
-		var dateText = $('input[type=date]').val();
 		$(this).val("");
-		$('ul').append('<li>' + todoText + '   ' + dateText + '<span><i class="fa fa-trash"</i></span></li>');
+		$('ul').append('<li>' + todoText + '<span><i class="fa fa-trash"</i></span></li>');
 	}
 });
 
