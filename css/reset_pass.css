@@ -5,12 +5,6 @@ body{
     background-size: cover;
 }
 
-a{
-    color: yellow;
-    text-decoration: blink;
-    font-family: Tahoma, geneva, sans-serif;
-}
-
 form{
     width: 240px;
     text-align: center;
@@ -60,4 +54,22 @@ input[type=submit]:hover{
 ::placeholder{
     color: lightgrey;
     opacity: 0.8;
+}
+
+a{
+    margin-right:0px;
+    font-size:13px;
+    font-family:Tahoma, Geneva, san-serif;
+    color: yellow;
+    text-decoration: blink;
+}
+
+a:hover{
+    color: darkblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }

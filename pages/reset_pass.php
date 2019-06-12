@@ -33,6 +33,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 session_destroy();
 ?>
 
+<style>
+    a{
+        margin-right:0px;
+        font-size:13px;
+        font-family:Tahoma, Geneva, san-serif;
+        color: yellow;
+        text-decoration: blink;
+    }
+
+    a:hover{
+        color: darkblue;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+</style>
 
 <!DOCTYPE html>
     <head>
@@ -56,6 +75,9 @@ session_destroy();
                <br><br>
                <input type="submit" value="save">
                <br><br>
+               <div id="container">
+                    <a href="/scripts/index.php">Go Back to Login Page</a>
+                </div><br><br><br><br><br><br>
            </form>
         </div> 
     </body>

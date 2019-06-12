@@ -78,6 +78,26 @@ function close_all($respond, $mysqli) {
 
 ?>
 
+<style>
+    a{
+        margin-right:0px;
+        font-size:13px;
+        font-family:Tahoma, Geneva, san-serif;
+        color: yellow;
+        text-decoration: blink;
+    }
+
+    a:hover{
+        color: darkblue;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+</style>
+
 <title>Sign Up!</title>
 <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 <link rel="stylesheet" href="/css/signup.css">
@@ -99,6 +119,9 @@ function close_all($respond, $mysqli) {
         <br><br>
         <input type="submit" value="Sign Up">
         <br><br>
+        <div id="container">
+                    <a href="/scripts/index.php">Go Back to Login Page</a>
+                </div><br><br><br><br><br><br>
     </form>
 </div>
 
