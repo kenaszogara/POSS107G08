@@ -22,7 +22,7 @@ form{
     width: 250px;
     margin: auto;
     margin-top: 100px;
-    height: 350px;
+    height: 450px;
 }
 
 input{
@@ -40,7 +40,7 @@ input{
     color: white;
 }
 
-input[type=button]{
+input[type=submit]{
     border: none;
     width: 250px;
     background: white;
@@ -52,7 +52,7 @@ input[type=button]{
     cursor: pointer;
 }
 
-input[type=button]:hover{
+input[type=submit]:hover{
     color: white;
     background-color: black;
 }
