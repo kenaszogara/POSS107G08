@@ -46,13 +46,13 @@ session_destroy();
         <div class="signup">
             <form method="POST">
                <h2>Reset Password</h2>
-               <input type="text" name="username" placeholder="Username">
+               <input type="text" name="username" placeholder="Username" required>
                <br><br>
-               <input type="password" name="password" placeholder=" Old Password">
+               <input type="password" name="password" placeholder=" Old Password" required>
                <br><br>
-               <input type="password" name="new_password" placeholder="New Password">
+               <input type="password" name="new_password" placeholder="New Password" required>
                <br><br>
-               <input type="password" name="confirm_password" placeholder="Confirm New Password">
+               <input type="password" name="confirm_password" placeholder="Confirm New Password" required>
                <br><br>
                <input type="submit" value="save">
                <br><br>
