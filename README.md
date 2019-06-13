@@ -15,7 +15,7 @@ Update and install apache in your local package by using this command on the ter
 $ sudo apt update
 $ sudo apt install apache2
 ```
-afterwards you can check wether Apache is running on your system by typing this command:
+afterwards you can check whether Apache is running on your system by typing this command:
 ```
 $ sudo systemclt status apache2
 ```
@@ -25,7 +25,7 @@ Install mariadb-server from the command line:
 ```
 $ sudo apt install mariadb-server
 ```
-Check wether mariadb is running on your system:
+Check whether mariadb is running on your system:
 ```
 $ sudo systemclt status mariadb
 ```
@@ -37,13 +37,13 @@ then just (Yes) to all questions
 
 
 ### 3.Setting up the Database
-After finishing installtion of [MariaDB](#2.Installing-MariaDB)
+After finishing installtion of [MariaDB](##2.Installing-MariaDB)
 You need to setup the database
 First login to root user:
 ```
 $ mysql -u root -p
 ```
-root user default password is "empty" so just press enter afterwards.
+Root user default password is "empty" so just press enter afterwards.
 Then run the .sql script which you can find [here](https://github.com/TKUIITFCChang/POSS107G08/blob/master/admin.sql)
 and execute it with this line of code
 ```
@@ -54,7 +54,7 @@ Then just log out and login with the **admin** user.
 ```
 $ mysql -u admin -p
 ```
-then create a databse called *user* with the tables *accounts* and *tasks*
+Then create a databse called *user* with the tables *accounts* and *tasks*
 ```
 mysql> CREATE DATABASE user;
 mysql> USE user;
@@ -85,7 +85,7 @@ And now you are done, and your db is ready to go!
 
 ### 4.Clone Repository to Apache root/folder 
 1. [Clone](https://help.github.com/en/articles/cloning-a-repository) this repository.
-2. Put everything(copy and replace) under /var/www/html/*
+2. Put everything(copy and replace) under /var/www/html/*.
 3. Done!
 
 ## How It Works
