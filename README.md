@@ -9,7 +9,7 @@ Thank You Next is a simple webapp created as a task management tool. This applic
 * [License](#License)
 
 ## Getting Started
-### 1.Setting Up Apache
+### 1. Setting Up Apache
 Update and install apache in your local package by using this command on the terminal:
 ```
 $ sudo apt update
@@ -20,7 +20,7 @@ afterwards you can check whether Apache is running on your system by typing this
 $ sudo systemclt status apache2
 ```
 
-### 2.Installing MariaDB
+### 2. Installing MariaDB
 Install mariadb-server from the command line:
 ```
 $ sudo apt install mariadb-server
@@ -36,8 +36,8 @@ $ sudo mysql_secure_installation
 then just (Yes) to all questions
 
 
-### 3.Setting up the Database
-After finishing installtion of [MariaDB](##2.Installing-MariaDB)
+### 3. Setting up the Database
+After finishing installtion of [MariaDB](#2.-nstalling-MariaDB)
 You need to setup the database
 First login to root user:
 ```
@@ -83,7 +83,7 @@ mysql> ALTER TABLE tasks
 ```
 And now you are done, and your db is ready to go!
 
-### 4.Clone Repository to Apache root/folder 
+### 4. Clone Repository to Apache root/folder 
 1. [Clone](https://help.github.com/en/articles/cloning-a-repository) this repository.
 2. Put everything(copy and replace) under /var/www/html/*.
 3. Done!
