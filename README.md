@@ -15,7 +15,7 @@ Update and install apache in your local package by using this command on the ter
 $ sudo apt update
 $ sudo apt install apache2
 ```
-afterwards you can check whether Apache is running on your system by typing this command:
+Afterwards you can check whether Apache is running on your system by typing this command:
 ```
 $ sudo systemclt status apache2
 ```
@@ -33,17 +33,16 @@ Then run the mariadb secure installation:
 ```
 $ sudo mysql_secure_installation
 ```
-then just (Yes) to all questions
+Then just answer (Yes) to all questions.
 
 
 ### 3. Setting up the Database
-After finishing installtion of [MariaDB](#2.-nstalling-MariaDB)
-You need to setup the database
+After finishing installtion of MariaDB, you need to set up the database.
 First login to root user:
 ```
 $ mysql -u root -p
 ```
-Root user default password is "empty" so just press enter afterwards.
+**root** user default password is "empty" so just press enter afterwards.
 Then run the .sql script which you can find [here](https://github.com/TKUIITFCChang/POSS107G08/blob/master/admin.sql)
 and execute it with this line of code
 ```
