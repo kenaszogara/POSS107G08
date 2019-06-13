@@ -9,8 +9,86 @@ Thank You Next is a simple webapp created as a task management tool. This applic
 * [License](#License)
 
 ## Getting Started
-1. Set up git and have a github account.
-2. [Clone](https://help.github.com/en/articles/cloning-a-repository) this repository to your local folder.
+### Pre-Requisites:
+#### Apache setup:
+##### 1.Installing Apache
+Update and install apache in your local package by using this command on the terminal:
+```
+$ sudo apt update
+$ sudo apt install apache2
+```
+afterwards you can check wether Apache is running on your system by typing this command:
+```
+$ sudo systemclt status apache2
+```
+
+##### 2.Installing MariaDB
+Install mariadb-server from the command line:
+```
+$ sudo apt install mariadb-server
+```
+Check wether mariadb is running on your system:
+```
+$ sudo systemclt status mariadb
+```
+Then run the mariadb secure installation:
+```
+$ sudo mysql_secure_installation
+```
+then just (Yes) to all questions
+
+
+##### 3.Setting up the Database
+After finishing installtion of [MariaDB](#2.Installing-MariaDB)
+You need to setup the database
+First login to root user:
+```
+$ mysql -u root -p
+```
+root user default password is "empty" so just press enter afterwards.
+Then run the .sql script which you can find [here](https://github.com/TKUIITFCChang/POSS107G08/blob/master/admin.sql)
+and execute it with this line of code
+```
+$ mysql> source location\to\sql\script;
+```
+Then a user called **admin** should be available on your mariadb with privileges of the **root** user and the password of *admin*. 
+Then just log out and login with the **admin** user.
+```
+$ mysql -u admin -p
+```
+then create a databse called *user* with the tables *accounts* and *tasks*
+```
+mysql> CREATE DATABASE user;
+mysql> USE user;
+```
+Create table *accounts*:
+```
+mysql> CREATE TABLE accounts (
+  user_id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(100),
+  pass VARCHAR(100),
+  email VARCHAR(100)
+  );
+```
+Create table *tasks*:
+```
+mysql> CREATE TABLE tasks (
+  id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  description VARCHAR(100),
+  user_id MEDIUMINT NOT NULL
+);
+```
+Then you need to add a foreign key from *accounts.user_id* to the tasks *tasks.user_id*:
+```
+mysql> ALTER TABLE tasks
+  ADD FOREIGN KEY (user_id) REFERENCES accounts (user_id);
+```
+And now you are done, and your db is ready to go!
+
+#### 4.Clone Repository to Apache root/folder 
+1. [Clone](https://help.github.com/en/articles/cloning-a-repository) this repository.
+2. Put everything(copy and replace) under /var/www/html/*
+3. Done!
 
 ## How It Works
 * Utilizing Linux as our host machine, we coded in PHP, HTML, CSS, and JS for the to-do list application.
