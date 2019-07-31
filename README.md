@@ -43,7 +43,7 @@ First login to root user:
 $ mysql -u root -p
 ```
 **root** user default password is "empty" so just press enter afterwards.
-Then run the .sql script which you can find [here](https://github.com/TKUIITFCChang/POSS107G08/blob/master/admin.sql)
+Then run the .sql script which you can find [here](https://github.com/kenaszogara/POSS107G08/blob/master/admin.sql)
 and execute it with this line of code
 ```
 $ mysql> source location\to\sql\script;
