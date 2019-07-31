@@ -99,7 +99,7 @@ This is the final version of our project but we would appreciate feedback of any
 #### Group Introduction (POSS107G08)
 We are a group of university students doing a project for our Practice of Open Source Software course. This course requires us to create a web application and because we wanted to make something practical that students like us will find useful, we made a to-do list. 
 * **Wendy Narmada** - *IIT-2SE* - [wendynarmada](https://github.com/wendynarmada)
-* **Zogara Kenas** - *IIT-3SE* - [Tralaladudut](https://github.com/tralaladudut)
+* **Zogara Kenas** - *IIT-3SE* - [kenaszogara](https://github.com/kenaszogara)
 * **Hannah Fakatou** - *IIT-3AI* - [Langi17](https://github.com/langi17)
 
 ## License
